@@ -1,0 +1,39 @@
+vpc_config = {
+    name       = "myvpc"
+    public_key = "ssh-rsa mypublickey"
+    allowed_ssh = ["0.0.0.0/0"]
+    allowed_web = ["0.0.0.0/0"]
+}
+
+bastion_config = {
+    image_id      = "ami-04cf43aca3e6f3de3"
+    instance_type = "t2.micro"
+    volume_size   = 8
+    volume_type   = "gp2"
+    group         = "bastion"
+}
+
+ingress_config = {
+    image_id      = "ami-04cf43aca3e6f3de3"
+    instance_type = "t2.micro"
+    volume_size   = 30
+    volume_type   = "gp2"
+    group         = "ingress"
+}
+
+control_config = {
+    image_id      = "ami-04cf43aca3e6f3de3"
+    instance_type = "t2.micro"
+    volume_size   = 80
+    volume_type   = "gp2"
+    group         = "control"
+}
+
+worker_config = {
+    image_id      = "ami-04cf43aca3e6f3de3"
+    instance_type = "t2.micro"
+    volume_size   = 160
+    volume_type   = "gp2"
+    worker_count  = 0
+    group         = "worker"
+}
