@@ -5,9 +5,11 @@ Creates:
   - 3 public subnets (per AZ)
   - 3 private subnets (per AZ)
   - 3 Elastic IPs
-  - 3 NAT gateways (per AZ)
-  - 3 bastion hosts (per AZ)
-  - 3 control hosts (Kubernetes control plane) (per AZ)
+  - 3 NAT gateways (per AZ) in public subnets
+  - 3 bastion hosts (per AZ) in public subnets
+  - 3 control hosts (Kubernetes control plane) (per AZ) in private subnets
+  - 3 ingress hosts (per AZ) in public subnets
+  - desired number of worker hosts (per AZ) in private subnets 
 
 # Install prerequisites:
   - Terraform [0.12.x](https://releases.hashicorp.com/terraform/0.12.21/terraform_0.12.21_linux_amd64.zip) 
