@@ -64,7 +64,7 @@ terraform apply -var-file="main.tfvars"
     - `worker_count:` workers count. Deploys `count` per AZ. Default `0`
     - `group:` value of `group` tag. Used in dynamic inventory. Default `worker`
 
-Get one of your `bastions` public IP address and paste following to `~/.ssh/config`
+Get one of your `bastions` public IP address and paste following to `~/.ssh/config`. Replace `1.2.3.4` with your bastion IP.
 
 ```sh
 Host 172.16.*.*
