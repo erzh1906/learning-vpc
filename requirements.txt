@@ -2,7 +2,7 @@ ansible==2.9.5
 boto==2.49.0
 cffi==1.14.0
 cryptography==2.8
-Jinja2==2.11.1
+Jinja2==2.11.3
 MarkupSafe==1.1.1
 pkg-resources==0.0.0
 pycparser==2.19
